@@ -13,6 +13,10 @@
 		F253FD0522DEF66C00DD50A3 /* StoryboardSupportApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F253FD0322DEF66C00DD50A3 /* StoryboardSupportApp.xcdatamodeld */; };
 		F253FD0722DEF66F00DD50A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F253FD0622DEF66F00DD50A3 /* Assets.xcassets */; };
 		F253FD0A22DEF66F00DD50A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F253FD0822DEF66F00DD50A3 /* LaunchScreen.storyboard */; };
+		F253FD1222DEF6DF00DD50A3 /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F253FD1122DEF6DF00DD50A3 /* StoryboardiPad.storyboard */; };
+		F253FD1522DEFD2700DD50A3 /* ipadFirstVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253FD1422DEFD2700DD50A3 /* ipadFirstVc.swift */; };
+		F253FD1722DEFD6300DD50A3 /* iPadSecondVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253FD1622DEFD6300DD50A3 /* iPadSecondVc.swift */; };
+		F253FD1922DEFDA300DD50A3 /* iPhoneSecondVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253FD1822DEFDA300DD50A3 /* iPhoneSecondVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F253FD0622DEF66F00DD50A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F253FD0922DEF66F00DD50A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F253FD0B22DEF66F00DD50A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F253FD1122DEF6DF00DD50A3 /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
+		F253FD1422DEFD2700DD50A3 /* ipadFirstVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipadFirstVc.swift; sourceTree = "<group>"; };
+		F253FD1622DEFD6300DD50A3 /* iPadSecondVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadSecondVc.swift; sourceTree = "<group>"; };
+		F253FD1822DEFDA300DD50A3 /* iPhoneSecondVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSecondVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		F253FCFB22DEF66C00DD50A3 /* StoryboardSupportApp */ = {
 			isa = PBXGroup;
 			children = (
+				F253FD1A22DEFFD600DD50A3 /* iPhoneProject */,
+				F253FD1322DEFCD500DD50A3 /* iPadProject */,
 				F253FCFC22DEF66C00DD50A3 /* AppDelegate.swift */,
-				F253FCFE22DEF66C00DD50A3 /* ViewController.swift */,
-				F253FD0022DEF66C00DD50A3 /* Main.storyboard */,
 				F253FD0622DEF66F00DD50A3 /* Assets.xcassets */,
 				F253FD0822DEF66F00DD50A3 /* LaunchScreen.storyboard */,
 				F253FD0B22DEF66F00DD50A3 /* Info.plist */,
 				F253FD0322DEF66C00DD50A3 /* StoryboardSupportApp.xcdatamodeld */,
 			);
 			path = StoryboardSupportApp;
+			sourceTree = "<group>";
+		};
+		F253FD1322DEFCD500DD50A3 /* iPadProject */ = {
+			isa = PBXGroup;
+			children = (
+				F253FD1122DEF6DF00DD50A3 /* StoryboardiPad.storyboard */,
+				F253FD1422DEFD2700DD50A3 /* ipadFirstVc.swift */,
+				F253FD1622DEFD6300DD50A3 /* iPadSecondVc.swift */,
+			);
+			path = iPadProject;
+			sourceTree = "<group>";
+		};
+		F253FD1A22DEFFD600DD50A3 /* iPhoneProject */ = {
+			isa = PBXGroup;
+			children = (
+				F253FD0022DEF66C00DD50A3 /* Main.storyboard */,
+				F253FCFE22DEF66C00DD50A3 /* ViewController.swift */,
+				F253FD1822DEFDA300DD50A3 /* iPhoneSecondVc.swift */,
+			);
+			path = iPhoneProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,7 @@
 				F253FD0A22DEF66F00DD50A3 /* LaunchScreen.storyboard in Resources */,
 				F253FD0722DEF66F00DD50A3 /* Assets.xcassets in Resources */,
 				F253FD0222DEF66C00DD50A3 /* Main.storyboard in Resources */,
+				F253FD1222DEF6DF00DD50A3 /* StoryboardiPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F253FCFF22DEF66C00DD50A3 /* ViewController.swift in Sources */,
+				F253FD1922DEFDA300DD50A3 /* iPhoneSecondVc.swift in Sources */,
 				F253FD0522DEF66C00DD50A3 /* StoryboardSupportApp.xcdatamodeld in Sources */,
+				F253FD1722DEFD6300DD50A3 /* iPadSecondVc.swift in Sources */,
 				F253FCFD22DEF66C00DD50A3 /* AppDelegate.swift in Sources */,
+				F253FD1522DEFD2700DD50A3 /* ipadFirstVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

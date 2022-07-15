@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WRI-lH-z5B">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ipad First Vc-->
+        <scene sceneID="CvY-im-EbV">
+            <objects>
+                <viewController storyboardIdentifier="ipadFirstVc" id="oaS-lZ-Wx9" customClass="ipadFirstVc" customModule="StoryboardSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zlh-zc-MfH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSy-Um-faa">
+                                <rect key="frame" x="312" y="483" width="400" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="1BK-QP-GUC"/>
+                                    <constraint firstAttribute="width" constant="400" id="NOh-2h-l6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNext_onClick:" destination="oaS-lZ-Wx9" eventType="touchUpInside" id="IaR-3j-Fw2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.48739161580000001" blue="0.193041201" alpha="0.84251581669999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eSy-Um-faa" firstAttribute="centerX" secondItem="zlh-zc-MfH" secondAttribute="centerX" id="72H-2r-keo"/>
+                            <constraint firstItem="eSy-Um-faa" firstAttribute="centerY" secondItem="zlh-zc-MfH" secondAttribute="centerY" id="Xrs-qz-Dw7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Np8-We-Pnz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cbb-QG-wRs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3y-VU-Y5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.68749999999989" y="47.87701317715959"/>
+        </scene>
+        <!--iPad Second Vc-->
+        <scene sceneID="XzK-4z-Op6">
+            <objects>
+                <viewController storyboardIdentifier="iPadSecondVc" id="ZDV-da-qOu" customClass="iPadSecondVc" customModule="StoryboardSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwf-4P-dza">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPad View.........///////" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRP-Nl-C09">
+                                <rect key="frame" x="337" y="659" width="350.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TRP-Nl-C09" firstAttribute="centerY" secondItem="hwf-4P-dza" secondAttribute="centerY" id="X8B-ch-HuE"/>
+                            <constraint firstItem="TRP-Nl-C09" firstAttribute="centerX" secondItem="hwf-4P-dza" secondAttribute="centerX" id="icy-73-U8M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LSR-w4-96v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1t-AU-JUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545.1171875" y="50.951683748169835"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VdM-AZ-UY4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WRI-lH-z5B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iTr-5f-pbU">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oaS-lZ-Wx9" kind="relationship" relationship="rootViewController" id="dUB-IS-6Zn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kO3-aA-d1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180.46875" y="47.87701317715959"/>
+        </scene>
+    </scenes>
+</document>
